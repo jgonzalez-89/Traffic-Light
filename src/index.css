@@ -1,0 +1,35 @@
+body {
+  background-color: #B4E0ED ;
+}
+
+.container {
+  position: relative;;
+}
+
+.traffic-light {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  background: #2C3E50;
+  padding: 10px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.light{
+  display: block;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.red{ background-color: #CB4335;}
+.yellow{ background-color: #D68910;}
+.green{ background-color: #28B463;}
+
+.glow {
+  box-shadow: 0px 0px 20px 2px #FFFFFF;
+}
