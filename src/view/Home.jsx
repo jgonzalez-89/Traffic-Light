@@ -1,22 +1,15 @@
-import React, { useState } from "react";
+import React from 'react'
+import Button from '../components/Button'
+import LightView from '../components/LightView'
 
-export function Home() {
-    const [selectedColor, setSelectedColor] = useState("");
 
-    return (
-        <div className="container traffic-light">
-            <div onClick={() => setSelectedColor("red")}
-                className={
-                    "light red" + (selectedColor === "red" ? " glow" : "")
-                }></div>
-            <div onClick={() => setSelectedColor("yellow")}
-                className={
-                    "light yellow" + (selectedColor === "yellow" ? " glow" : "")
-                }></div>
-            <div onClick={() => setSelectedColor("green")}
-                className={
-                    "light green" + (selectedColor === "green" ? " glow" : "")
-                }></div>
-        </div>
-    );
+const Home = () => {
+  return (
+      <div>
+          <div><LightView /></div>
+          <div><Button /></div>
+      </div>
+  )
 }
+
+export default Home
