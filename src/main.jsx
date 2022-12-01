@@ -1,11 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Home from './view/home'
+import Button from './components/Button'
+import LightView from './components/LightView'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home />
+    <div>
+      <div><LightView /></div>
+      <div><Button /></div>
+    </div>
   </React.StrictMode>
 )
