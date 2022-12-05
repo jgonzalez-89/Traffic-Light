@@ -1,22 +1,20 @@
-import React from 'react'
-import { useState } from 'react'
-import Button from './components/Button'
+
+import React, { useState } from "react";
 import LightView from './components/LightView'
 
 
 const App = () => {
 
-    const [light, setLight] = useState([])
+  const [color, setColor] = useState("");
 
   return (
       <div>
           <div>
             <LightView
-            light={light}
-            setLight={setLight}
+            color={color}
+            setColor={setColor}
             />
           </div>
-          <div><Button /></div>
       </div>
   )
 }

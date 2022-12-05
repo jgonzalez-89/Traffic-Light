@@ -1,28 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import Button from "./Button";
 
 
 
-const LightView = (light, setLight) => {
-    const [selectedColor, setSelectedColor] = useState("");
+const LightView = () => {
+    const [color, setColor] = useState("");
 
-    const objetoLight = selectedColor
-    console.log(objetoLight)
-        
-    // setLight([...light, objetoLight])
 
     return (
         <div className="container traffic-light">
-            <div onClick={(e) => setSelectedColor("red")}
+            
+            {<Button valor={color}/>}
+
+            <div onClick={() => setColor("red")}
                 className={
-                    "light red" + (selectedColor === "red" ? " glow" : "")
+                    "light red" + (color === "red" ? " glow" : "")
                 }></div>
-            <div onClick={() => setSelectedColor("yellow")}
+            <div onClick={() => setColor("yellow")}
                 className={
-                    "light yellow" + (selectedColor === "yellow" ? " glow" : "")
+                    "light yellow" + (color === "yellow" ? " glow" : "")
                 }></div>
-            <div onClick={() => setSelectedColor("green")}
+            <div onClick={() => setColor("green")}
                 className={
-                    "light green" + (selectedColor === "green" ? " glow" : "")
+                    "light green" + (color === "green" ? " glow" : "")
                 }></div>
         </div>
     )
