@@ -11,8 +11,7 @@ const App = () => {
       <div>
           <div>
             <LightView
-            color={color}
-            setColor={setColor}
+            setColor={color}
             />
           </div>
       </div>

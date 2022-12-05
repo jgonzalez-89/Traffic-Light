@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
-const Button = (valor) => {
+const Button = (colorValue) => {
 
     const [color, setColor] = useState("");
  
   return (
     <div>
       <button className='button' onClick={() => {
-        valor.valor === "red" ? setColor("yellow") 
-                        : valor.valor === "yellow" ? setColor("green") 
-                        : valor.valor === "green" ? setColor("red") 
+        colorValue.colorValue === "red" ? setColor("yellow") 
+                        : colorValue.colorValue === "yellow" ? setColor("green") 
+                        : colorValue.colorValue === "green" ? setColor("red") 
                         : setColor("")
         
       }}>

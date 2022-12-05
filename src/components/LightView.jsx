@@ -10,7 +10,7 @@ const LightView = () => {
     return (
         <div className="container traffic-light">
             
-            {<Button valor={color}/>}
+            {<Button colorValue={color}/>}
 
             <div onClick={() => setColor("red")}
                 className={
