@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const LightView = () => {
+
+
+const LightView = (light, setLight) => {
     const [selectedColor, setSelectedColor] = useState("");
+
+    const objetoLight = selectedColor
+    console.log(objetoLight)
+        
+    // setLight([...light, objetoLight])
 
     return (
         <div className="container traffic-light">
-            <div onClick={() => setSelectedColor("red")}
+            <div onClick={(e) => setSelectedColor("red")}
                 className={
                     "light red" + (selectedColor === "red" ? " glow" : "")
                 }></div>
